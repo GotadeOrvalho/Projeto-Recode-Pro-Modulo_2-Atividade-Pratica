@@ -1,0 +1,164 @@
+/*Resete*/
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+
+.body {
+   
+    
+    background-color: #D6E9FF;  
+}
+.text-white {
+    color: #faf7f0 !important;
+}
+/*Menu*/
+.bg-dark{
+    background-image: linear-gradient(180deg, #2A74AC, #415676);
+        
+}
+.letra {
+    font-family: Elephant;
+}
+nav a:hover {
+    background-color: #E08E00 !important;
+}
+
+/*Fim do Menu*/
+
+/*Main*/
+.bg-main {
+    background-color: #FAFAF0;
+} 
+
+/*Seção 1 da Main de todas as páginas*/
+.bgimg-sessao1 {
+    background-image: url(./img/WhatsApp\ Image\ 2023-07-26\ at\ 11.15.36.jpeg);
+    
+}
+.masthead {
+    background-size: cover;
+    height: 80vh;
+    background-position-x: center;
+}
+.m-0 {
+    margin: 0 !important;
+    padding-right: 0;
+}
+.estilo-card {
+    
+    height: max-content;
+    width: max-content;
+    background-color: #faf7f0;
+}
+.viajantes option:hover {
+    background-color: #E7560D
+}
+.button {
+    background-color: #f7982c;
+    text-shadow: 2px 2px 2px #2461b1;
+    border-color: #2870cf94;
+    
+}
+.button:hover {
+    background-color: #E7560D;
+    color:#faf7f0 ;
+}
+legend {
+    color: #1a0700ee;
+    font-family: Elephant;
+}
+label {
+    color: #1a0700ee
+}
+input {
+    border-color: #03377a;
+    
+}
+.viajantes {
+    background-color: #f7982c;
+    text-shadow: 2px 2px 2px #2461b1;
+    border-color: #2870cf94;
+}
+@media (max-width: 991px) {
+    .masthead {
+        max-height: 60vh;
+    }  
+}
+
+@media (max-width: 575px) {
+    .form {
+        width:100%;
+    }
+    .imgdata {
+        width: 10%;
+    }
+    .formdata {
+        width: 35%;
+    }
+    .btnsm {
+        display: block;
+    }
+    .pp {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+
+/*Fim Seção 1*/
+
+ /*Seção 2 e 3 da Main do index*/
+
+.carousel-inner {
+  padding: 1em;
+  
+}
+.card {
+  margin: 0.5em;
+  
+}
+a {
+    text-decoration: none;
+}
+.align {
+    padding-top: 25%;
+    
+}
+@media (max-width: 991px) {
+    .col-9 {
+        width: 100%;
+    }
+    .align {
+        padding-top:2% !important;
+    }   
+}
+/*Fim Seção 1 e 2 da Main do index*/
+
+/*Começo da sessão 2 de promoções*/
+.preço {
+    color: #E08E00;
+}
+/*Fim da Seção 2 das promoções*/
+
+/*Começo da seção 2 da Main de Contatos*/
+.bgimg-seção2 {
+    background-image: url(./img/img-contato.jpg);
+}
+.masthead2 {
+    background-size: cover;
+    height: 100vh;
+    background-position-x: center;
+}
+.buttoncontato {
+    background-color: #E7560D;
+    text-shadow: 2px 2px 2px #2461b1;
+    border-color: #2870cf94;
+    
+}
+.buttoncontato:hover {
+    background-color: #f7982c;
+    color:#faf7f0 ;
+}

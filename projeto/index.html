@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <title>Página inicial</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link rel="stylesheet" href="./estilo.css">
+    </head>
+
+    <body class="body">
+
+      <!-- Começo do menu-->
+      <header class="row " >
+        <nav class="navbar navbar-expand-lg bg-dark px-3 m-auto  " >
+          <section class="container-fluid col-lg-md-sm-2">
+            <a class="navbar-brand text-white fs-1 px-2 letra" href="index.html" title="Link para a página inicial.">
+              <img src="./img/Imagem1.png" height="50" class="d-inline-block align-text-bottom" alt="Um avião entre as nuvens.">Vamos Viajar</a>
+                   
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+
+            <section class="collapse navbar-collapse col-md-sm-10 justify-content-end" id="navbarSupportedContent">
+              <ul class="nav letra">
+                <li class="nav-item ">
+                  <a class="nav-link active text-white  " aria-current="page" href="index.html" title="Link pra página inicial.">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="Destino.html" title="Link para a página de destinos.">Destino</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Promoções.html" title="Link para a página de promoções.">Promoções</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contato.html" title="link para a página de contato.">Contato</a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </nav>
+      </header>
+      <!-- Fim do menu -->
+
+      <!-- Começo da main-->
+      <main class="row justify-content-center ">
+
+        <!-- Seção 1 -->
+        <section class=" row m-0  masthead masthead-sm bgimg-sessao1 justify-content-center">                
+          <div class="card estilo-card align-self-center">
+            <form class="card-body   form-inline">
+              <legend >Encontre a passagem que cabe no seu bolso!</legend>
+                <label for="" class="mr-sm-2 form-label">Escolha uma opção:</label>
+                <input type="radio" id="ida" value="apenasida" name="ida_volta" class="form-check-input" >
+                <label for="ida"  class="mr-sm-2 form-check-label ">Apenas Ida</label>
+
+                <input type="radio" id="ida-volta" value="ida-volta" name="ida_volta" class="mr-sm-2 form-check-input" >
+                <label for="ida-volta" class="form-check-label">Ida e volta</label>
+
+                <p>
+                  <input type="text" id="indo" placeholder="Digite onde é seu destino!" class="form-control-sm form">
+                  <label class="form-label"><img src="./img/seta-circular (1).png" alt="Símbolo de troca, significa que os destinos serão trocados."></label>
+                  <input type="text" id="voltando" placeholder="Digite seu local de retorno!" class="form-control-sm mb-2 mr-sm-2 form ">
+
+                  <label for="dataida" class="form-label imgdata"><img src="./img/icons8-avião-decolando-40.png" alt="Imagem de avião decolando."></label>
+                  <input type="date" id="dataida" class="form-control-sm formdata">
+                  <label for="datavolta" class="form-label imgdata"><img src="./img/icons8-avião-pousando-40.png" alt="Imagem de avião pousando."></label>
+                  <input type="date" id="datavolta" class="form-control-sm formdata">
+                 
+                  <label for="viajantes" class="form-label">Viajantes</label>
+                  <select id="viajantes" class="viajantes text-white form-select-sm" name="viajantes">
+                    <option value="1" class="viajantes">1</option>
+                    <option value="2">2</option>
+                   <option value="3">3</option>
+                  </select>
+                  <a href="Promoções.html" title="Link de promoções."><input type="button" name="buscar-voos" value="Buscar Voos" class="button btn btnsm text-white border-waning p-1 px-2   "></a>
+                </p>
+            </form>
+          </div>
+        </section>
+        <!-- Fim da Seção 1-->
+        <section class="bg-main row col-9 ">
+
+          <legend class="my-0 pt-3 px-4">Os melhores destinos pra você!</legend>
+            <div id="carouselExampleIndicators1" class="carousel slide ">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <div class="card text-bg-dark text-center">
+                    <img src="./img/riodejaneiro.png" class="card-img " alt="Imagem do Rio de Janeiro.">
+                      <div class="card-img-overlay align">
+                        <h3 class="card-title letra">Rio de Janeiro</h3>
+                        <p class="card-text">Visite um dos lugares mais famosos do brasil.</p>
+                        <p class="card-text h6"><small>Descontos de até 30% em suas viagens.</small></p>
+                        <a href="Destino.html"><button type="button"  class="btn btn-outline-light" title="Link para você ver mais.">Ver mais</button></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card text-bg-dark text-center">
+                    <img src="./img/fortaleza.png" class="card-img " alt="Imagem de Fortaleza.">
+                      <div class="card-img-overlay align">
+                        <h3 class="card-title  letra">Fortaleza</h3>
+                        <p class="card-text">Lindas praias esperam vocês!</p>
+                        <p class="card-text h6"><small>Descontos de até 35% em suas viagens.</small></p>
+                        <a href="Destino.html"><button type="button"  class="btn btn-outline-light" title="Link para você ver mais.">Ver mais</button></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card text-bg-dark text-center">
+                    <img src="./img/brasilia.png" class="card-img " alt="">
+                      <div class="card-img-overlay align">
+                        <h3 class="card-title letra">Brasília</h3>
+                        <p class="card-text">Pontos turísticos históricos incríveis.</p>
+                        <p class="card-text h6"><small>Descontos de até 25% em suas viagens.</small></p>
+                        <a href="Destino.html"><button type="button"  class="btn btn-outline-light" title="Link para você ver mais.">Ver mais</button></a>
+                      </div>
+                  </div>
+                </div>
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </section>
+
+        <section class="bg-main row col-9 ">
+          <legend class="my-0 pt-3 px-4">Os melhores destinos pra você!</legend>
+            <div id="carouselExampleIndicators2" class="carousel slide">
+              <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <div class="card text-bg-dark text-center">
+                    <img src="./img/recife.png" class="card-img " alt="">
+                      <div class="card-img-overlay align">
+                      <h3 class="card-title letra">Recife</h3>
+                      <p class="card-text">Um dos lugares mais bonitos do país.</p>
+                      <p class="card-text h6"><small>Agenge já sua viagem!</small></p>
+                      <a href="Destino.html"><button type="button"  class="btn btn-outline-light"  title="Link para você ver mais.">Ver mais</button></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="card text-bg-dark text-center">
+                    <img src="./img/salvador.jpg" class="card-img " alt="">
+                      <div class="card-img-overlay align">
+                        <h3 class="card-title letra">Salvador</h3>
+                        <p class="card-text">Uma cultura rica para se explorar.</p>
+                        <p class="card-text h6"><small>Agenge já sua viagem!</small></p>
+                        <a href="Destino.html"><button type="button"  class="btn btn-outline-light" title="Link para você ver mais.">Ver mais</button></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card text-bg-dark text-center">
+                    <img src="./img/saopaulo.png" class="card-img " alt="">
+                      <div class="card-img-overlay align">
+                        <h4 class="card-title letra ">São Paulo</h4>
+                        <p class="card-text">Sejam bem-vindos a cidade grande famosa pela sua gastronomia, hotelaria e negocios.</p>
+                        <p class="card-text h6"><small>Agenge já sua viagem!</small></p>
+                        <a href="Destino.html"><button type="button"  class="btn btn-outline-light" title="Link para você ver mais.">Ver mais</button></a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </section>
+      </main>
+      <!-- Fim da main-->
+
+      <!--Começo do rodapé-->
+      <footer class="row ">
+        <section class="bg-dark text-white text-center d-flex ">
+        <p class="w-50 pt-2 small">Site desenvolvido por @AdrianeFerreira </p>
+        <p class="w-50 pt-2 small">Em parceria da Recode Pro</p>
+        </section>
+      </footer>
+      <!--Fim do rodapé-->
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+  </html>
